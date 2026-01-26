@@ -5,9 +5,8 @@
     This file handles all the animations on the page.
 
     It does three main things:
-    1. Sets the video playback speed to half (0.5x)
-    2. Fades in the hero content when the page loads
-    3. Fades in elements as you scroll down the page
+    1. Fades in the hero content when the page loads
+    2. Fades in elements as you scroll down the page
 
     We use the "Intersection Observer" API which is a modern,
     efficient way to detect when elements come into view.
@@ -15,24 +14,7 @@
 
 
 // ========================================
-// PART 1: VIDEO PLAYBACK SPEED
-// ========================================
-// Set the background video to play at half speed (0.5x)
-// This creates a more peaceful, calming effect.
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Find the video element by its ID
-    const video = document.getElementById('bg-video');
-
-    // If the video exists, set its playback speed to 0.5 (half speed)
-    if (video) {
-        video.playbackRate = 0.5;
-    }
-});
-
-
-// ========================================
-// PART 2: HERO FADE-IN ON PAGE LOAD
+// PART 1: HERO FADE-IN ON PAGE LOAD
 // ========================================
 // When the page finishes loading, fade in the hero content
 // with a small delay between each element.
@@ -59,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // ========================================
-// PART 3: SCROLL-TRIGGERED ANIMATIONS
+// PART 2: SCROLL-TRIGGERED ANIMATIONS
 // ========================================
 // These animations happen when you scroll down and
 // elements come into view.
