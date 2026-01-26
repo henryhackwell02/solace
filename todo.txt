@@ -3,3 +3,7 @@ make the sections (solace, featured story, read our stories, who we are, share y
 do the same for the 4 sections under read our stories (they should fade in one by one, and fade out in reverse order).
 
 do the same for all of the subpages e.g. genres.html
+
+lower case for titles (inc. top left), normal in buttons
+
+box around subtitle "a platform..."
