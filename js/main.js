@@ -2,7 +2,7 @@
     ========================================
     SOLACE - Main JavaScript File
     ========================================
-    This file handles all the animations on the page.
+    This file handles all the animations on the page！
 
     It does three main things:
     1. Fades in the hero content when the page loads
