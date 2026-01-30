@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        SOLACE - A Platform for Uplifting Stories
+        This is the main HTML file that structures our entire website.
+    -->
+    <meta charset="UTF-8">
+
+    <!-- This makes the website look good on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solace - Uplifting Stories & Thoughtful Optimism</title>
+
+    <!-- Link to our CSS file for styling -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts - Using Nunito, a friendly rounded font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--
+        ========================================
+        VIDEO BACKGROUND
+        ========================================
+        This video stays fixed in place while you scroll.
+        The id="bg-video" lets us control the playback speed with JavaScript.
+    -->
+    <div class="video-background">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="Image_To_Animated_Looping_Video.mp4" type="video/mp4">
+        </video>
+        <!-- Dark overlay to make text readable over the video -->
+        <div class="video-overlay"></div>
+    </div>
+
+    <!--
+        ========================================
+        HERO SECTION (First thing visitors see)
+        ========================================
+        Contains the navigation, main title, and taglines.
+        Has a transparent background so the video shows through.
+    -->
+    <section class="hero" id="hero">
+
+        <!-- Navigation Bar -->
+        <nav class="nav">
+            <!-- Logo on the left -->
+            <div class="nav-logo">Solace</div>
+
+            <!-- Navigation links on the right -->
+            <div class="nav-links">
+                <a href="about.html">about</a>
+                <a href="genres.html">latest stories</a>
+                <a href="mailto:solace@gmail.com">share your story</a>
+            </div>
+        </nav>
+
+        <!-- Main hero content - centered on screen -->
+        <div class="hero-content">
+            <!-- Main title with fade-in animation -->
+            <h1 class="hero-title fade-in">Solace</h1>
+
+            <!-- Primary tagline -->
+            <p class="hero-tagline fade-in">a platform for uplifting stories and thoughtful optimism</p>
+
+            <!-- Secondary tagline -->
+            <p class="hero-subtitle fade-in">discover stories that inspire hope, celebrate human resilience, and remind us of the good in the world</p>
+        </div>
+    </section>
+
+    <!--
+        ========================================
+        FEATURED ARTICLE SECTION
+        ========================================
+        Shows a preview of the featured story with a fade-out effect at the bottom.
+        Has transparent background so video shows through.
+    -->
+    <section class="featured-section scroll-fade" id="featured">
+        <div class="container">
+            <!-- Section heading -->
+            <h2 class="section-title">Featured Story</h2>
+
+            <!-- Article preview container -->
+            <div class="featured-article">
+                <!-- Article text with fade-out effect at bottom -->
+                <div class="article-preview">
+                    <h3>The Garden That Grew Hope</h3>
+                    <p>
+                        In the heart of a bustling city, tucked between towering apartment buildings and busy streets,
+                        there exists a small community garden that has become a symbol of resilience and connection.
+                        What started as a single patch of overgrown land has transformed into a thriving oasis of
+                        green, nurtured by neighbors who once barely knew each other's names.
+                    </p>
+                    <p>
+                        Maria Santos, a retired school teacher, first noticed the abandoned lot on her daily walks.
+                        "It was filled with litter and weeds," she recalls, her eyes brightening at the memory.
+                        "But I could see what it could become." Armed with nothing but determination and a few
+                        packets of seeds, she began clearing a small corner one spring morning...
+                    </p>
+                </div>
+                <!-- Gradient overlay that fades the text out -->
+                <div class="article-fade"></div>
+            </div>
+
+            <!-- Read more button - links to full story page -->
+            <a href="featured-story.html" class="btn btn-outline">read more</a>
+        </div>
+    </section>
+
+    <!--
+        ========================================
+        GENRE BOXES SECTION
+        ========================================
+        Four category boxes that fade in one by one as you scroll.
+        Each box has a data-delay attribute that controls when it appears.
+    -->
+    <section class="genres-section scroll-fade" id="stories">
+        <div class="container">
+            <!-- Section header with title and "see all" link -->
+            <div class="genres-header">
+                <h2 class="section-title">read our stories</h2>
+                <a href="genres.html" class="see-all-link">see all</a>
+            </div>
+
+            <!-- Grid of genre boxes -->
+            <div class="genres-grid">
+                <!--
+                    Each box has:
+                    - scroll-fade: Makes it fade in when scrolling
+                    - data-delay: Controls the timing (0 = first, 1 = second, etc.)
+                    - An SVG icon at the top
+                -->
+                <div class="genre-box scroll-fade" data-delay="0">
+                    <!-- Tree icon for nature & calm -->
+                    <div class="genre-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22v-7"/>
+                            <path d="M12 15c-4 0-6-3-6-6 0-2 1-4 3-5 0-2 1.5-4 3-4s3 2 3 4c2 1 3 3 3 5 0 3-2 6-6 6z"/>
+                        </svg>
+                    </div>
+                    <h3>nature & calm</h3>
+                    <p>Stories of peaceful moments and the healing power of the natural world</p>
+                </div>
+
+                <div class="genre-box scroll-fade" data-delay="1">
+                    <!-- Conical flask icon for breakthroughs -->
+                    <div class="genre-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 3h6v5l4 9a2 2 0 0 1-1.8 2.9H6.8A2 2 0 0 1 5 17l4-9V3z"/>
+                            <path d="M9 3h6"/>
+                            <path d="M8 14h8"/>
+                        </svg>
+                    </div>
+                    <h3>breakthroughs</h3>
+                    <p>Celebrating discoveries, innovations, and moments of triumph</p>
+                </div>
+
+                <div class="genre-box scroll-fade" data-delay="2">
+                    <!-- Muscular arm icon for resilience -->
+                    <div class="genre-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 15c0-2 1-3 3-3h1c1.5 0 2.5-1 3-2l2-4c.5-1 1.5-1.5 2.5-1 1 .5 1.5 1.5 1 2.5L15 11c0 1 1 2 2 2h2c1.5 0 2 1 2 2v4c0 1-.5 2-2 2H8c-2 0-4-2-4-4v-2z"/>
+                        </svg>
+                    </div>
+                    <h3>resilience</h3>
+                    <p>Tales of overcoming challenges and finding strength within</p>
+                </div>
+
+                <div class="genre-box scroll-fade" data-delay="3">
+                    <!-- Smiley face icon for uplift -->
+                    <div class="genre-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                            <circle cx="9" cy="9" r="1" fill="currentColor"/>
+                            <circle cx="15" cy="9" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>uplift</h3>
+                    <p>Heartwarming stories that restore faith in humanity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        ========================================
+        WHO WE ARE SECTION
+        ========================================
+        Section with mission statement.
+        Transparent background so video shows through.
+    -->
+    <section class="about-section scroll-fade" id="about">
+        <div class="container">
+            <h2 class="section-title">who we are</h2>
+
+            <div class="about-content">
+                <p>
+                    Solace was born from a simple belief: that in a world often overwhelmed by challenging news,
+                    there's immense value in creating a space dedicated to stories that uplift, inspire, and
+                    remind us of our shared humanity.
+                </p>
+                <p>
+                    We curate and share stories of kindness, resilience, breakthrough, and everyday moments of
+                    beauty. Our mission is not to ignore life's difficulties, but to ensure that tales of hope
+                    and human goodness find their way to those who need them most.
+                </p>
+                <p>
+                    Whether you're seeking a moment of peace, looking for inspiration, or wanting to share your
+                    own story of positivity, you've found your place. Welcome to Solace.
+                </p>
+            </div>
+
+            <!-- Links to the full about page -->
+            <a href="about.html" class="btn btn-outline">learn more</a>
+        </div>
+    </section>
+
+    <!--
+        ========================================
+        SHARE YOUR STORY SECTION
+        ========================================
+        A call-to-action for visitors to submit their own stories.
+    -->
+    <section class="share-section scroll-fade" id="share">
+        <div class="container">
+            <h2 class="section-title">share your story</h2>
+
+            <p class="share-text">
+                Have an uplifting story to tell? We'd love to hear from you.
+                Every story has the power to inspire someone who needs it.
+            </p>
+
+            <!-- Links to email for story submission -->
+            <a href="mailto:solace@gmail.com" class="btn btn-outline">submit your story</a>
+        </div>
+    </section>
+
+    <!--
+        ========================================
+        FOOTER
+        ========================================
+    -->
+    <footer class="footer scroll-fade">
+        <p>&copy; 2026 Solace. Spreading hope, one story at a time.</p>
+    </footer>
+
+    <!-- Link to our JavaScript file for animations -->
+    <script src="js/main.js"></script>
+</body>
+</html>
