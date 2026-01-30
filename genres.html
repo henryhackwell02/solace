@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        SOLACE - Story Genres Page
+        This page shows all story categories and recent stories.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Stories - Solace</title>
+
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts - Nunito (rounded, friendly font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video Background (same as main page) -->
+    <div class="video-background">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="Image_To_Animated_Looping_Video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">Solace</a>
+        <div class="nav-links">
+            <a href="about.html">about</a>
+            <a href="genres.html">latest stories</a>
+            <a href="mailto:solace@gmail.com">share your story</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Page Title -->
+            <h1 class="page-title fade-in">our stories</h1>
+
+            <p class="page-subtitle fade-in">
+                Explore our collection of uplifting stories organized by category.
+                Each story is a reminder of the good in our world.
+            </p>
+
+            <!-- Genre Cards Grid -->
+            <div class="genres-page-grid">
+                <!-- Nature & Calm -->
+                <div class="genre-card scroll-fade" data-delay="0">
+                    <!-- Tree icon -->
+                    <div class="genre-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22v-7"/>
+                            <path d="M12 15c-4 0-6-3-6-6 0-2 1-4 3-5 0-2 1.5-4 3-4s3 2 3 4c2 1 3 3 3 5 0 3-2 6-6 6z"/>
+                        </svg>
+                    </div>
+                    <h2>nature & calm</h2>
+                    <p>Stories of peaceful moments and the healing power of the natural world</p>
+
+                    <div class="story-list">
+                        <a href="#" class="story-link">Finding Peace in a Forest Bath</a>
+                        <a href="#" class="story-link">The Lake That Healed a Town</a>
+                        <a href="#" class="story-link">Sunrise Rituals Around the World</a>
+                    </div>
+                </div>
+
+                <!-- Breakthroughs -->
+                <div class="genre-card scroll-fade" data-delay="1">
+                    <!-- Flask icon -->
+                    <div class="genre-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 3h6v5l4 9a2 2 0 0 1-1.8 2.9H6.8A2 2 0 0 1 5 17l4-9V3z"/>
+                            <path d="M9 3h6"/>
+                            <path d="M8 14h8"/>
+                        </svg>
+                    </div>
+                    <h2>breakthroughs</h2>
+                    <p>Celebrating discoveries, innovations, and moments of triumph</p>
+
+                    <div class="story-list">
+                        <a href="#" class="story-link">Teen Invents Water Filter for Village</a>
+                        <a href="#" class="story-link">The Accidental Discovery That Saved Lives</a>
+                        <a href="#" class="story-link">From Failure to Breakthrough: A Scientist's Journey</a>
+                    </div>
+                </div>
+
+                <!-- Resilience -->
+                <div class="genre-card scroll-fade" data-delay="2">
+                    <!-- Arm icon -->
+                    <div class="genre-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 15c0-2 1-3 3-3h1c1.5 0 2.5-1 3-2l2-4c.5-1 1.5-1.5 2.5-1 1 .5 1.5 1.5 1 2.5L15 11c0 1 1 2 2 2h2c1.5 0 2 1 2 2v4c0 1-.5 2-2 2H8c-2 0-4-2-4-4v-2z"/>
+                        </svg>
+                    </div>
+                    <h2>resilience</h2>
+                    <p>Tales of overcoming challenges and finding strength within</p>
+
+                    <div class="story-list">
+                        <a href="#" class="story-link">Running Again After Being Told Never</a>
+                        <a href="#" class="story-link">The Town That Rebuilt Itself</a>
+                        <a href="#" class="story-link">Letters From the Storm: Stories of Recovery</a>
+                    </div>
+                </div>
+
+                <!-- Uplift -->
+                <div class="genre-card scroll-fade" data-delay="3">
+                    <!-- Smiley icon -->
+                    <div class="genre-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                            <circle cx="9" cy="9" r="1" fill="currentColor"/>
+                            <circle cx="15" cy="9" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h2>uplift</h2>
+                    <p>Heartwarming stories that restore faith in humanity</p>
+
+                    <div class="story-list">
+                        <a href="featured-story.html" class="story-link">The Garden That Grew Hope</a>
+                        <a href="#" class="story-link">Strangers Who Became Family</a>
+                        <a href="#" class="story-link">Small Acts, Big Hearts: Everyday Heroes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Home Button -->
+            <a href="index.html" class="btn btn-outline fade-in">back to home</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Solace. Spreading hope, one story at a time.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
